@@ -307,34 +307,8 @@ section {
 .women-cards:last-of-type {
   padding-bottom: 60px;
 }
-@media (min-width: 576px) {
-  .women-cards .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .women-cards .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .women-cards .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1300px) {
-  .women-cards .container {
-    max-width: 1250px;
-  }
-}
-@media (min-width: 1500px) {
-  .women-cards .container {
-    max-width: 1450px;
-  }
-}
-
-.women-cards .col-lg-25 {
-  max-width: 20%;
+.women-cards .row {
+  justify-content: center;
 }
 .women-cards .woman-card {
   margin: 10px 0 30px 0;
@@ -371,6 +345,58 @@ section {
   font-size: 22px;
   font-weight: 500;
   color: var(--color-4)
+}
+
+@media (min-width: 576px) {
+  .women-cards .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .women-cards .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .women-cards .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1300px) {
+  .women-cards .container {
+    max-width: 1250px;
+  }
+}
+@media (min-width: 1500px) {
+  .women-cards .container {
+    max-width: 1450px;
+  }
+}
+.women-cards .col-lg-25 {
+  max-width: 20%;
+}
+@media (max-width: 1200px) {
+  .women-cards .col-lg-25 {
+    max-width: 25%;
+  }
+}
+@media (max-width: 992px) {
+  .women-cards .col-lg-25 {
+    max-width: 33.33%;
+  }
+  .women-cards .woman-card .text h5 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .women-cards .col-lg-25 {
+    max-width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .women-cards .woman-card .text h5 {
+    font-size: 16px;
+  }
 }
 
 /*--------------------------------------------------------------
