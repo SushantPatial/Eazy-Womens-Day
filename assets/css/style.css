@@ -149,9 +149,9 @@ html, body {
 }
 @media screen and (max-width: 575px) {
   .hero .hero-text h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
-  .hero .container .col-lg-8 {
+  .hero .container .hero-text {
     padding: 0px 30px;
   }
 }

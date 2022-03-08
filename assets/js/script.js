@@ -22,13 +22,6 @@ $(window).on('load', function() {
   }
 })
 
-// AOS
-AOS.init({
-  disable: true,
-  duration: 1000, // values from 0 to 3000, with step 50ms
-  once: true, // whether animation should happen only once - while scrolling down
-});
-
 // Footer year
 var date = new Date().getFullYear();
 document.getElementById("year").innerHTML = date;
