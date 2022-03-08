@@ -17,7 +17,7 @@ html, body {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 120px;
+  height: 110px;
   padding: 0 30px;
   position: fixed;
   left: 0;
@@ -30,151 +30,25 @@ html, body {
 }
 #header.header-scrolled, #header.header-inner {
   background: rgba(6, 12, 34, 0.9);
-  height: 110px;
+  height: 100px;
 }
 #header #logo {
   margin-left: 40px;
 }
+#header #logo a {
+  text-decoration: none;
+}
 #header #logo img {
-  width: 120px;
-  height: 100%;
+  height: 80px;
 }
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Desktop Navigation 
-.navbar {
-  padding: 0;
-  padding-right: 40px;
-}
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-.navbar li {
-  position: relative;
-  text-transform: uppercase;
-}
-.navbar > ul > li {
-  white-space: nowrap;
-  padding: 10px 0 10px 0px;
-  margin: 0 15px;
-  font-size: 22px !important;
-}
-.navbar a, .navbar a:focus {
-  display: flex;
-  align-items: center;
-  color: var(--color-2);
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  white-space: nowrap;
-  transition: 0.3s;
-  position: relative;
-  padding: 6px 4px;
-}
-#header.header-scrolled .navbar a, #header.header-scrolled .navbar a:focus {
-  color: rgba(243, 243, 243, 0.8);
-}
-.navbar a i, .navbar a:focus i {
-  font-size: 16px;
-  line-height: 0;
-  margin-left: 5px;
-  margin-top: -2px;
-}
-.navbar > ul > li > a:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  bottom: 0px;
-  left: 0;
-  background-color: var(--color-3);
-  visibility: hidden;
-  transition: all 0.3s ease-in-out 0s;
-}
-.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
-  visibility: visible;
-  width: 100%;
-}
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: var(--color-2);
-}
-
- Mobile Navigation
-.mobile-nav-toggle {
-  color: var(--color-3);
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-}
-#header.header-scrolled .mobile-nav-toggle{
-  color: #fff;
-}
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-  .navbar ul {
-    display: none;
+@media screen and (max-width: 576px) {
+  #header #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
-  transition: 0.3s;
-  z-index: 999;
-}
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 30px;
-  right: 16px;
-}
-.navbar-mobile .fa-times {
-  color: #fff;
-}
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-.navbar-mobile > ul > li {
-  padding: 0;
-}
-.navbar-mobile ul li a {
-  color: var(--color-2);
-}
-#header.header-scrolled .navbar-mobile a, #header.header-scrolled .navbar-mobile a:focus {
-  color: var(--color-2);
-}
-#header.header-scrolled .navbar-mobile .active, #header.header-scrolled .navbar-mobile li:hover > a {
-  color: var(--color-2);
-}
-.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
-  visibility: hidden;
-}
-.navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
-} */
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -215,7 +89,7 @@ html, body {
 -------------------- */
 .hero {
   height: 700px;
-  background-image: url(../images/hero-bg.jpeg);
+  background-image: url(../images/hero-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,6 +118,7 @@ html, body {
 .hero .hero-text h3 {
   margin-top: 30px;
   margin-left: 10px;
+  display: flex;
 }
 
 @media screen and (max-width: 1399px) {
@@ -454,5 +329,3 @@ html, body {
     margin-right: 0;
   }
 }
-
-
